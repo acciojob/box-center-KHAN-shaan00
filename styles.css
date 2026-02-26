@@ -1,18 +1,28 @@
-/*  your css code here. If applicable */
+/* Center the box on webpage */
 .main{
-    height: 100vh;          
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+    position: relative;
+    height: 100vh;
 }
-.main .box{
-	background-color:lightblue;
-	border:2px solid black;
-	height:200px;
-	width:200px;
-}
+
 .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    border: 2px solid black;
+
+    text-align: center;
+}
+
+/* Center text inside box */
+.box h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: purple;
 }
